@@ -7,7 +7,7 @@ import { ExperienciaLaboral } from '../model/experiencia-laboral';
   providedIn: 'root'
 })
 export class SExperienciaLaboralService {
-  expURL = 'http://localhost:8080/explab/';
+  expURL = 'https://app-backend-testdemo.herokuapp.com/explab/';
   
   constructor(private httpClient: HttpClient) { }
 
