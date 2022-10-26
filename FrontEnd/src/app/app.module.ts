@@ -24,6 +24,9 @@ import { EduModalComponent } from './components/modal/edu-modal.component';
 import { EditExpLabModalComponent } from './components/modal/edit-exp-lab-modal.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,9 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
 
   ],
   providers: [ 
