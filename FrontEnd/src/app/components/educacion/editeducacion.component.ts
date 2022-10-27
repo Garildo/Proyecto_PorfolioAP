@@ -29,7 +29,7 @@ export class EditeducacionComponent implements OnInit {
     this.sEducacion.update(id, this.editedu).subscribe(
       data => {this.router.navigate(['']);
     }, err => {
-      alert("Error al modificar Experiencia Laboral");
+      alert("Error al modificar Educación");
       this.router.navigate(['']);
     })
   }
