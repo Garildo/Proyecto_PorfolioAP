@@ -71,6 +71,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
     }
+    
     /*protected void configure(HttpSecurity http) throws Exception {
         http.cors()
                 .and()
