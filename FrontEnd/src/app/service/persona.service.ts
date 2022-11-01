@@ -2,13 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { persona } from '../model/persona.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-  /*URL = 'https://app-backend-testdemo.herokuapp.com/personas/';*/
-  URL = 'http://localhost:8080/personas/';
+  URL = 'https://demofrontend-b30f4.web.app/personas/';
+  
+ 
 
   constructor(private httpClient: HttpClient) {  }
 
@@ -17,7 +19,7 @@ export class PersonaService {
   }
 
   public detail(id: number): Observable<persona> {
-    return this.httpClient.get<persona>(this.URL + `detail/${id}`); //comillas a las izquierda (tecla "}")//
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`); 
   } 
 
   /*public save(educacion: persona): Observable<any> {
