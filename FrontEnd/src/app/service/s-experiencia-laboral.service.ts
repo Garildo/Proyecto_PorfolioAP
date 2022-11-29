@@ -10,8 +10,8 @@ import { ExperienciaLaboral } from '../model/experiencia-laboral';
 export class SExperienciaLaboralService {
 
   
-  URL = 'https://demofrontend-b30f4.web.app/explab/';
-  
+  URL = 'https://bkdegerino.herokuapp.com/explab/';
+  //URL = 'http://localhost:4200/explab/';
   
   constructor(private httpClient: HttpClient) { }
 
