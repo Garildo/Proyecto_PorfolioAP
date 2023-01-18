@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { EduModalComponent } from './components/modal/edu-modal.component';
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'login', component: LoginComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'editeduc/:id', component: EditeducacionComponent},
   {path:'editacercade/:id', component: EditAcercaDeComponent},
   {path:'EduModalComponent', component: EduModalComponent},  
+  
   
   
   
