@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+/*@RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"https://demofrontend-b30f4.web.app", "http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200"})
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
@@ -48,7 +48,7 @@ public class PersonaController {
         }
         personaService.delete(id);
         return new ResponseEntity(new Mensaje("Persona eliminada"), HttpStatus.OK);
-    }*/
+    }
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
@@ -87,4 +87,6 @@ public class PersonaController {
         return new ResponseEntity(new Mensaje("Persona Actualizada"), HttpStatus.OK);
     }
     
-}
+}*/
+
+
