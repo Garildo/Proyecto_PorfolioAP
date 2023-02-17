@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = 'https://bkdegerino.herokuapp.com/auth/';
+  URL = 'https://backendgerino.onrender.com/auth/';
   //URL = 'http://localhost:4200/auth/';
   
   
