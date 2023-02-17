@@ -12,7 +12,7 @@
     <artifactId>Gerino</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
-    <description>Portfolio Gerino Enzo</description>
+    <description>Portfolio de MGB</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -67,18 +67,6 @@
             <version>3.9</version>
         </dependency>
         
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.14</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.yugabyte</groupId>
-            <artifactId>ysql</artifactId>
-            <version>42.2.7-yb-2</version>
-        </dependency>
-        
 
     </dependencies>
 
@@ -96,7 +84,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            
         </plugins>
     </build>
 
