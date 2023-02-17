@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
- URL = 'https://bkdegerino.herokuapp.com/educacion/';
+ URL = 'https://backendgerino.onrender.com/educacion/';
   //URL = 'http://localhost:4200/educacion/';
   
 
