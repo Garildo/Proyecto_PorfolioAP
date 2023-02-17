@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://bkdegerino.herokuapp.com/personas/';
+  URL = 'https://backendgerino.onrender.com/personas/';
   //URL = 'http://localhost:4200/personas/';
   
  
