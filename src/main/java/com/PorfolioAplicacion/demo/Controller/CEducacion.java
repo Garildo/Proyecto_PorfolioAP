@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.PorfolioAplicacion.demo.Controller;
 
 import com.PorfolioAplicacion.demo.Dto.dtoEducacion;
@@ -29,7 +25,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"http://localhost:4200"})
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://demofrontend-b30f4.web.app")
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;
@@ -94,3 +91,4 @@ public class CEducacion {
     }
     
 }
+
