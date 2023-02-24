@@ -48,11 +48,11 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
     }
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    /*protected void configure(HttpSecurity http) throws Exception {
 
 
         List<String> list1 = Arrays.asList(new String[]{"Authorization", "Cache-Control", "Content-Type"});
-        List<String> list2 = Arrays.asList(new String[]{"http://localhost:4200"});
+        List<String> list2 = Arrays.asList(new String[]{frontend_url});
         List<String> list3 = Arrays.asList(new String[]{"GET", "POST", "PUT", "DELETE", "OPTIONS"});
         List<String> list4 = Arrays.asList(new String[]{"Authorization"});
 
@@ -69,11 +69,8 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.cors().configurationSource(request -> corsConfiguration);
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-        
 
-    }
-    
-    /*@Override
+    }*/
     protected void configure(HttpSecurity http) throws Exception {
         http.cors()
                 .and()
@@ -86,8 +83,8 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
                 .authenticated()
                 .and().exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-    }*/
-    
+    }
+
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
         return super.authenticationManager();

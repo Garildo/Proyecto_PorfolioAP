@@ -1,4 +1,3 @@
-
 package com.PorfolioAplicacion.demo;
 
 import org.springframework.context.annotation.Configuration;
@@ -14,3 +13,4 @@ public class WebConfig implements WebMvcConfigurer{
         registry.addMapping("/*");
     }
 }
+
