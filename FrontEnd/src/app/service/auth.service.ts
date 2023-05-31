@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = 'https://backendgerino.onrender.com/auth/';
+  URL = 'https://demofrontend-b30f4.web.app/auth/';
   //URL = 'http://localhost:4200/auth/';
   
   

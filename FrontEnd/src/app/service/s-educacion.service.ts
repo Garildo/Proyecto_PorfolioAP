@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
- URL = 'https://backendgerino.onrender.com/educacion/';
+ URL = 'https://demofrontend-b30f4.web.app/educacion/';
   //URL = 'http://localhost:4200/educacion/';
   
 

@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://backendgerino.onrender.com/personas/';
+  URL = 'https://demofrontend-b30f4.web.app/personas/';
   //URL = 'http://localhost:4200/personas/';
   
  
